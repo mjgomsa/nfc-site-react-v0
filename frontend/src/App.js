@@ -1,13 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
-import { CelineSucc } from "./pages/CelineSucc.js";
-import { CelineFail } from "./pages/CelineFail.js";
+import { Home } from "./pages/Home";
+import { CelineSucc } from "./pages/CelineSucc";
+import { CelineFail } from "./pages/CelineFail";
 
 function App() {
   return (
-    <Router basename="/nfc-site-react-v0">
+    <Router>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/S-WNMHU" element={<CelineSucc />} />
         <Route path="/F-WNMHU" element={<CelineFail />} />
       </Routes>
