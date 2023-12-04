@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/nfc-site-react-v0/static/css/main.0271b92f.css",
-    "main.js": "/nfc-site-react-v0/static/js/main.8699e6dc.js",
+    "main.css": "/nfc-site-react-v0/static/css/main.db948adf.css",
+    "main.js": "/nfc-site-react-v0/static/js/main.6fcc9818.js",
     "static/js/872.33e73f06.chunk.js": "/nfc-site-react-v0/static/js/872.33e73f06.chunk.js",
     "static/js/227.3e4199f8.chunk.js": "/nfc-site-react-v0/static/js/227.3e4199f8.chunk.js",
     "static/js/526.1ecefa85.chunk.js": "/nfc-site-react-v0/static/js/526.1ecefa85.chunk.js",
     "static/js/232.40daa721.chunk.js": "/nfc-site-react-v0/static/js/232.40daa721.chunk.js",
     "static/js/237.2fd2ee77.chunk.js": "/nfc-site-react-v0/static/js/237.2fd2ee77.chunk.js",
     "static/js/787.cda612ba.chunk.js": "/nfc-site-react-v0/static/js/787.cda612ba.chunk.js",
+    "static/media/denim-img.png": "/nfc-site-react-v0/static/media/denim-img.d47c404ad5560386d6d2.png",
     "static/media/celine-img.png": "/nfc-site-react-v0/static/media/celine-img.40e7f950f8b65863a5d4.png",
     "static/media/Inter-VariableFont.ttf": "/nfc-site-react-v0/static/media/Inter-VariableFont.853e01975d2783d9fa29.ttf",
     "static/media/glitch.gif": "/nfc-site-react-v0/static/media/glitch.43c1a043c674e3facf11.gif",
+    "static/media/denimLogo.png": "/nfc-site-react-v0/static/media/denimLogo.33c0319454780bd5700c.png",
     "static/media/applPay.png": "/nfc-site-react-v0/static/media/applPay.f6d59303f60c8ee84690.png",
     "static/media/Logo-wht.png": "/nfc-site-react-v0/static/media/Logo-wht.a9943dc38e5bef6547a3.png",
     "index.html": "/nfc-site-react-v0/index.html",
-    "main.0271b92f.css.map": "/nfc-site-react-v0/static/css/main.0271b92f.css.map",
-    "main.8699e6dc.js.map": "/nfc-site-react-v0/static/js/main.8699e6dc.js.map",
+    "main.db948adf.css.map": "/nfc-site-react-v0/static/css/main.db948adf.css.map",
+    "main.6fcc9818.js.map": "/nfc-site-react-v0/static/js/main.6fcc9818.js.map",
     "872.33e73f06.chunk.js.map": "/nfc-site-react-v0/static/js/872.33e73f06.chunk.js.map",
     "227.3e4199f8.chunk.js.map": "/nfc-site-react-v0/static/js/227.3e4199f8.chunk.js.map",
     "526.1ecefa85.chunk.js.map": "/nfc-site-react-v0/static/js/526.1ecefa85.chunk.js.map",
@@ -24,7 +26,7 @@
     "787.cda612ba.chunk.js.map": "/nfc-site-react-v0/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0271b92f.css",
-    "static/js/main.8699e6dc.js"
+    "static/css/main.db948adf.css",
+    "static/js/main.6fcc9818.js"
   ]
 }
