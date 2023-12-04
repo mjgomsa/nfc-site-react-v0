@@ -3,12 +3,32 @@
   src: url('./assets/fonts/Inter-VariableFont.ttf') format('truetype');
 }
 
+body {
+  margin: 0; /* Reset default body margin */
+  font-family: 'Inter', sans-serif; /* Apply Inter font to the entire page */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .App {
   text-align: center;
 }
 
+.detailsButton {
+  margin-top: -5rem;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
 
+.sml-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .App-header {
   background-color: white;
   min-height: 90vh;
@@ -19,43 +39,65 @@
   font-size: calc(10px + 2vmin);
 }
 
-
-
-.logoimg{
-  z-index: 2;
-  position: absolute;
-  z-index: 1;
-  width: 100px;
-  top: 5px;
+.logoimg {
+  position: relative; /* Add this line */
+  width: 6rem;
   mix-blend-mode: difference;
-  margin: 0 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
 }
 
 .splinewrap {
-  height: 90vh;
-  width: 100%;
+  position: relative; /* Add this line */
+  margin-top: -10rem;
+
+}
+
+@media (max-width: 768px) {
+  .splinewrap {
+    height: 90vh;
+  }
+}
+
+h2 {
+  position: relative; /* Add this line */
+  color: #000;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 2;
+}
+
+span {
+  font-weight: 700;
+  mix-blend-mode: difference;
 }
 
 h3 {
   color: #000;
-text-align: center;
-font-family: 'Inter';
-font-size: 0.9rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.space-large {
-  margin-bottom: 20vh; /* Adjust the value to set the desired space */
+.space-large{
+  margin-bottom: 30vh; /* Adjust the value to set the desired space */
 }
 
 .space-small {
   margin-bottom: 10vh; /* Adjust the value to set the desired space */
 }
 
-
 .card {
+  /* Adjust width and height if needed */
   border-radius: 1.5625rem;
   background: rgba(217, 217, 217, 0.16);
   border: 1px solid rgba(0, 0, 0, 0.11);
@@ -63,11 +105,30 @@ line-height: normal;
   height: 25.1875rem;
   flex-shrink: 0;
   position: relative;
-  perspective: 1000px; /* Set the perspective for the 3D effect */
+  perspective: 1000px;
   transform-style: preserve-3d;
   transition: transform 0.5s;
+  margin: auto;
 }
 
+.card:hover {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
 
 .card.flipped {
   transform: rotateY(180deg);
@@ -88,31 +149,29 @@ line-height: normal;
 .cardHeader {
   border-radius: 1.5625rem 1.5625rem 0rem 0rem;
   background: #1B1B1C;
-  /* width: 16.6875rem; */
   height: 2.25rem;
   flex-shrink: 0;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
-.productLogo {
+.productLogo{
   width: 4.875rem;
   height: 1.1875rem;
   flex-shrink: 0;
-  align-self: center;
   margin-left: 0.69rem;
+  align-self: center;
 }
 
 .antheaLogo {
-  width: 1.5rem;
-  /* height: 0.9375rem; */
+  width: 1.3125rem;
+  height: 0.9375rem;
   flex-shrink: 0;
-  align-self: center;
   margin-right: 0.69rem;
+  align-self: center;
 }
 
-
-.cardRow{
+.cardRow {
   display: flex;
 }
 
@@ -122,7 +181,7 @@ line-height: normal;
 
 h4 {
   color: #000;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-size: 0.625rem;
   font-style: normal;
   font-weight: 700;
@@ -134,20 +193,19 @@ h4 {
 
 h5 {
   color: #000;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-size: 0.5625rem;
   font-style: normal;
   font-weight: 200;
   line-height: normal;
-
 }
 
-.applPay{
+.applPay {
   width: 8.8125rem;
-height: 2.5rem;
-flex-shrink: 0;
-border-radius: 0.625rem;
-margin-top: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  margin-top: 2.5rem;
 }
 
 .imgBackCard {
@@ -159,5 +217,6 @@ margin-top: 2.5rem;
 }
 
 .imgCaption {
-  margin-top: -1.5rem;;
+  margin-top: -1.5rem;
+  text-align: center;
 }
