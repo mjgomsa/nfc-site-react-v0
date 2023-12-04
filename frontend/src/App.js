@@ -8,8 +8,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/S-WNMHU" element={<CelineSucc />} />
-        <Route path="/F-WNMHU" element={<CelineFail />} />
+        <Route path="/nfc-site-react-v0/S-WNMHU" element={<CelineSucc />} />
+        <Route path="/nfc-site-react-v0/F-WNMHU" element={<CelineFail />} />
       </Routes>
     </Router>
   );
