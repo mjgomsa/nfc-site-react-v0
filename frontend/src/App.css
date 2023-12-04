@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-VariableFont.ttf') format('truetype');
+}
+
+
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: white;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+
+
+.logoimg{
+  z-index: 2;
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  top: 5px;
+  mix-blend-mode: difference;
+  margin: 0 auto;
+}
+
+.splinewrap {
+  height: 90vh;
+  width: 100%;
+}
+
+h3 {
+  color: #000;
+text-align: center;
+font-family: 'Inter';
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.space-large {
+  margin-bottom: 20vh; /* Adjust the value to set the desired space */
+}
+
+.space-small {
+  margin-bottom: 10vh; /* Adjust the value to set the desired space */
+}
+
+
+.card {
+  border-radius: 1.5625rem;
+  background: rgba(217, 217, 217, 0.16);
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  width: 20rem;
+  height: 25.1875rem;
+  flex-shrink: 0;
+  position: relative;
+  perspective: 1000px; /* Set the perspective for the 3D effect */
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.cardBack {
+  transform: rotateY(180deg);
+}
+
+.cardHeader {
+  border-radius: 1.5625rem 1.5625rem 0rem 0rem;
+  background: #1B1B1C;
+  /* width: 16.6875rem; */
+  height: 2.25rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.productLogo {
+  width: 4.875rem;
+  height: 1.1875rem;
+  flex-shrink: 0;
+  align-self: center;
+  margin-left: 0.69rem;
+}
+
+.antheaLogo {
+  width: 1.5rem;
+  /* height: 0.9375rem; */
+  flex-shrink: 0;
+  align-self: center;
+  margin-right: 0.69rem;
+}
+
+
+.cardRow{
+  display: flex;
+}
+
+.cardColumn {
+  text-align: left;
+}
+
+h4 {
+  color: #000;
+  font-family: "Inter";
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 5.11925rem;
+  text-align: left;
+  margin-left: 0.56rem;
+}
+
+h5 {
+  color: #000;
+  font-family: "Inter";
+  font-size: 0.5625rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+
+}
+
+.applPay{
+  width: 8.8125rem;
+height: 2.5rem;
+flex-shrink: 0;
+border-radius: 0.625rem;
+margin-top: 2.5rem;
+}
+
+.imgBackCard {
+  width: inherit;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 1.5625rem;
+  z-index: -1;
+}
+
+.imgCaption {
+  margin-top: -1.5rem;;
+}
