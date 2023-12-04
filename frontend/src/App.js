@@ -9,9 +9,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/S-WNMHU" element={<CelineSucc />} />
-        <Route path="/F-WNMHU" element={<CelineFail />} />
+        <Route path="/frontend" element={<Home />} />
+        <Route path="/frontend/S-WNMHU" element={<CelineSucc />} />
+        <Route path="/frontend/F-WNMHU" element={<CelineFail />} />
       </Routes>
     </Router>
   );

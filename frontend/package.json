@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://mjgomsa.github.io/nfc-site-react-v0",
+  "homepage": "https://mjgomsa.github.io/nfc-site-react-v0/frontend",
   "private": true,
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
