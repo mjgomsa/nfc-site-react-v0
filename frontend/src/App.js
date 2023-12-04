@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import { Home } from "./pages/Home";
 import { CelineSucc } from "./pages/CelineSucc";
@@ -9,9 +9,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/frontend" element={<Home />} />
-        <Route path="/frontend/S-WNMHU" element={<CelineSucc />} />
-        <Route path="/frontend/F-WNMHU" element={<CelineFail />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/S-WNMHU" element={<CelineSucc />} />
+        <Route path="/F-WNMHU" element={<CelineFail />} />
       </Routes>
     </Router>
   );
