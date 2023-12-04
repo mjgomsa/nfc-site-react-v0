@@ -6,10 +6,10 @@ import { CelineFail } from "./pages/CelineFail.js";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/nfc-site-react-v0">
       <Routes>
-        <Route path="/nfc-site-react-v0/S-WNMHU" element={<CelineSucc />} />
-        <Route path="/nfc-site-react-v0/F-WNMHU" element={<CelineFail />} />
+        <Route path="/S-WNMHU" element={<CelineSucc />} />
+        <Route path="/F-WNMHU" element={<CelineFail />} />
       </Routes>
     </Router>
   );
