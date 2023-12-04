@@ -3,6 +3,7 @@
   src: url('./assets/fonts/Inter-VariableFont.ttf') format('truetype');
 }
 
+
 body {
   margin: 0; /* Reset default body margin */
   font-family: 'Inter', sans-serif; /* Apply Inter font to the entire page */
@@ -46,7 +47,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  z-index: 2;
+  z-index: 3;
 }
 
 .splinewrap {
@@ -62,6 +63,7 @@ body {
 }
 
 h2 {
+  margin-top: 2rem;
   position: relative; /* Add this line */
   color: #000;
   text-align: center;
@@ -70,7 +72,7 @@ h2 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  z-index: 2;
+  z-index: 3;
 }
 
 span {
